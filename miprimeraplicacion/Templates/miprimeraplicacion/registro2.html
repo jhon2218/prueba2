@@ -1,0 +1,61 @@
+{% extends 'miprimeraplicacion/inicio.html'%}
+{%block contenido%}
+<body style="color: rgb(43, 43, 97); background-color: #EA899A; font-family: Georgia, Cambria, serif; font-size: 16px;"></body>
+<body>
+<table class="thead-dark">
+    <thead>
+      <tr>
+          <th scope="col">Numero de Parte</th>
+          <th scope="col">Color</th>
+          <th scope="col">Temperatura</th>
+          <th scope="col">Inflamacion</th>
+      </tr>
+     </thead>
+     <tbody>
+           {% for i in misdatos %}       
+ <tr>
+    <th scope="row">{{i.partP}}</th>
+    <td>{{i.temperatura}}</td>
+    <td>{{i.color}}</td>
+    <td>{{i.inflamacion}}</td>
+    
+   </tr>
+        {% endfor %}
+      <h1> <a href="{% url 'pagina0'%}"> Inicio </a></h1> 
+
+      <p style="color: #0f0d0f;">Base de datos</p>
+ </tbody>
+</table>
+
+
+<HEAD>
+    
+    <p style="color: #ff00b3;"> 
+      <div class="fh5co-cover text-center"  style="background-image: url(static/miprimeraplicacion/images/rosa.jpg);"></div>
+             <h2>¿En qué se diferencia el cáncer de seno inflamatorio de otros tipos de cáncer de seno?</h2> 
+             <ul> 
+              <p style="color:rgb(17, 16, 16);">El IBC no parece un cáncer de seno típico. A menudo no causa un tumor mamario, y puede que no aparezca en un mamograma. Este cáncer puede ser más difícil de diagnosticar</p>
+              <p style="color:rgb(17, 16, 16);">El IBC tiende a ocurrir en mujeres más jóvenes (menores de 40 años de edad)</p></li> 
+              <p style="color:rgb(17, 16, 16);"><Las mujeres de raza negra suelen desarrollar IBC con más frecuencia que las mujeres de raza blanca.</li> 
+              <p style="color:rgb(17, 16, 16);">El IBC es más común entre las mujeres que tienen sobrepeso u obesidad.</li> 
+              <p style="color:rgb(17, 16, 16);">Este cáncer también tiende a ser más agresivo, crece y se propaga mucho más rápidamente en comparación con los tipos más comunes de cáncer de seno.</li> 
+              <p style="color:rgb(17, 16, 16);">Cuando se hace el diagnóstico, el IBC siempre está en etapa avanzada localmente porque las células del cáncer de seno han invadido la piel. (Esto significa al menos etapa III).</li> 
+              <p style="color:rgb(17, 16, 16);">Aproximadamente en 1 de cada 3 casos, el IBC ya se ha propagado (hecho metástasis) a partes distantes del cuerpo cuando se diagnostica. Esto dificulta el tratamiento de  este cáncer.</li> 
+              <p style="color:rgb(17, 16, 16);">Las mujeres con IBC suelen presentar un peor pronóstico (resultado) que las mujeres con otros tipos comunes de cáncer de seno.</li> 
+             </ul> 
+             <div class="fh5co-cover text-center"  style="background-image: url(static/miprimeraplicacion/images/moño.jpg);"></div>
+             <h2>Signos y síntomas del cáncer de seno inflamatorio</h2> 
+             <p style="color:rgb(17, 16, 16);">El cáncer de seno inflamatorio (IBC) causa varios signos y síntomas que en su mayoría se desarrollan rápidamente (en un período de 3 a 6 meses), incluyendo:</p> 
+             <ul> 
+              <p style="color:rgb(17, 16, 16);">Hinchazón (edema) de la piel del seno</p> 
+              <p style="color:rgb(17, 16, 16);">Enrojecimiento que afecta a más de un tercio del seno</p> 
+              <p style="color:rgb(17, 16, 16);">Hoyuelos o engrosamiento de la piel del seno que pueden ocasionar que luzca y se sienta como la cáscara de una naranja</p> 
+              <p style="color:rgb(17, 16, 16);">Un pezón retraído o invertido</p> 
+              <p style="color:rgb(17, 16, 16);">Un seno que luce más grande que el otro debido a la hinchazón</p> 
+              <p style="color:rgb(17, 16, 16);">Un seno que se siente más caliente y pesado que el otro seno</p> 
+              <p style="color:rgb(17, 16, 16);">Puede que sienta comezón (picor), sensibilidad o dolor al palpar el seno</p> 
+              <p style="color:rgb(17, 16, 16);">Hinchazón de los ganglios linfáticos debajo de los brazos o cerca de la clavícula</p> 
+     </HEAD>
+
+
+{%endblock%} 

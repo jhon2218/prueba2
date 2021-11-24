@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'miprimeraplicacion/inicio.html' %}">
+<head>
+    <title>Registro</title>
+<body>
+    <h1 class="title-agile text-center">Iniciar sesion</h1>
+    <div class="content-w3ls">
+        <div class="content-bottom">
+            <form action="#" method="post">
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1" id="text1" type="text" value="" placeholder="correo electronico/telefono" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-lock" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="password" id="myInput" type="Password" placeholder="Contraseña">
+                    </div>
+                </div>
+                <div class="field-group">
+                    <div class="check">
+                        <label class="checkbox w3l">
+                            <input type="checkbox" onclick="myFunction()">
+                            <i> </i>Recordar Contraseña</label>
+                    </div>
+                    <!-- script for show password -->
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myInput");
+                            if (x.type === "password") {
+                                x.type = "text";
+                            } else {
+                                x.type = "password";
+                            }
+                        }
+                    </script>
+                    <!-- //script for show password -->
+                </div>
+                <div class="wthree-field">
+                    <input id="saveForm" name="saveForm" type="submit" value="Registrarse" />
+                </div>
+                <ul class="list-login">
+                    <li class="switch-agileits">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                            Mostar contraseña
+                        </label>
+                    </li>
+                    <li>
+                        <a href="#" class="text-right">¿Olvido la Contraseña?</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="copyright text-center">
+        <p>© Derechos reservados  
+            <a href="https://www.uaemex.mx/">Univerdidad autonoma del estado de mexico</a>
+        </p>
+    </div>
+
+    <form action="/uploader" method="POST" enctype="multipart/form-data">
+        <input type="file" name="archivo">
+        <input type="submit">
+    </form>
+    
+
+ <a href="{% url 'pagina1'%}"> Segunda </a>
+            <a href="{% url 'pagina0'%}"> checar </a>  no tiene link
+            <a href="{% url 'pagina1'%}"> checar </a>     
+            <body style="background-color:#51a32a;">
+</body>
+<!-- //Body -->
+</html>

@@ -1,0 +1,29 @@
+{% extends 'miprimeraplicacion/inicio.html' %}
+{%block contenido%}
+<h1> Grafos********</h1>
+<h1>{{misdatos}}</h1>
+
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+              <th scope="col">Numero de Parte</th>
+              <th scope="col">Color</th>
+              <th scope="col">Temperatura</th>
+              <th scope="col">Inflamacion</th>
+          </tr>
+         </thead>
+         <tbody>
+               {% for i in misdatos %}       
+     <tr>
+        <th scope="row">{{i.partP}}</th>
+        <td>{{i.temperatura}}</td>
+        <td>{{i.color}}</td>
+        <td>{{i.inflamacion}}</td>
+       </tr>>
+
+            {% endfor %}
+            <a href="{% url 'pagina1'%}"> Tercera </a>
+           
+     </tbody>
+  </table>>
+{% endblock %}
